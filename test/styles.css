@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    width: 950px;
+    flex-wrap: wrap;
+    height: 400px;
+    border: solid 2px #000;
+  }
+  .start {
+    justify-content: flex-start;
+  }
+  .end {
+    justify-content:flex-end;
+  }
+  
+  .center {
+    justify-content: center;
+  }
+  
+  .spaceBetween {
+     justify-content: space-between;
+  }
+  .spaceAround {
+     justify-content: space-around;
+  }
+  .stretch {
+     justify-content: stretch;
+  }
+  
+  .element {
+    width: 150px;
+    min-height: 100px;
+  }
+  
+  .element1 {
+    background-color : orange;
+  }
+  .element2 {
+    background-color : blue;
+  }
+  .element3 {
+    background-color : lightgreen;
+  }

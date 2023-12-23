@@ -1,0 +1,53 @@
+footer {
+  background-color: #353535;
+  padding: 30px 25px;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+footer .footer {
+  display: flex;
+  color: white;
+  flex-direction: row;
+  gap: 7px;
+}
+footer .a {
+  width: 180px;
+}
+footer .a a {
+  margin-left: 11px;
+}
+footer .b {
+  width: 180px;
+}
+footer .b a {
+  margin-left: 11px;
+}
+footer .c {
+  width: 130px;
+}
+footer .d {
+  width: 130px;
+}
+footer .footernav {
+  margin-left: 15px;
+}
+footer .footerproposal a {
+  width: 168px;
+  text-decoration: none;
+}
+footer .footer_law a {
+  width: 130px;
+}
+footer img {
+  width: 139px;
+  margin-left: 16px;
+  color: white !important;
+}/*# sourceMappingURL=footer.css.map */

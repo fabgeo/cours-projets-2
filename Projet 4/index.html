@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Titre de la page</title>
+    <link rel="préconnexion" href="https://fonts.googleapis.com">
+    <link rel="préconnexion" href="https://fonts.gstatic.com" origine croisée>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Shrikhand&display=swap" rel="feuille de style">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/restaurant.scss" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <link rel="stylesheet" href="style/main.css" />
+  </head>
+  <body>
+    <div>
+      <header>
+        <nav>
+          <img src="images/Logo.png" alt="" /> <!-- Image logo -->
+        </nav>
+      </header>
+      <form action="get" action="#">
+        <div class="form">
+          <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="Paris, Belleville">
+        </div>
+      </form>
+      <section>
+        <div class="top">
+          <h1>Réservez le menu qui vous convient</h1>
+          <p>
+            Découvrez des restaurants d'exception, sélectionnés par nos soins.
+          </p>
+          <button><span class="explore">Explorer nos restaurant</span></button>
+        </div>
+      </section>
+      <section>
+        <div class="filters">
+          <p>Fonctionnement</p>
+          <div class="filters__research">
+            <div class="filter">
+              <span class="number">1</span>
+              <i class="fa-solid fa-mobile-screen-button" class="icone__color"></i>
+              <p>Choisissez un restaurant</p>
+            </div>
+            <div class="filter">
+              <span class="number">2</span>
+              <i class="fa-solid fa-list" class="icone__color"></i>
+              <p>Composez votre menu</p>
+            </div>
+            <div class="filter">
+              <span class="number">3</span>
+              <span><i class="fa-solid fa-store"></i></span>
+              <p>Dégustez au restaurant</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="restaurants">
+          <div>
+            <h3>Restaurant</h3>
+          </div>
+          <div class="restaurants__position"> <!-- cards ne haut -->
+              <a href="la-palette-du-gout.html">
+                <article class="card">
+                  <img src="images/palette-du-gout.jpg" alt="Image restaurant la palette du goût" />
+                  <div class="card__content">
+                    <div class="card__txt">
+                      <h4 class="card__title">Palette du goût</h4>
+                      <p class="card__subtitle">Ménilmontant</p>
+                    </div>
+                    <div class="card__rating">
+                      <i class="fa-regular fa-heart"></i> <!-- superposer 2 coeur 1 juste contour l'autre tout noir-->
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a href="la-note-enchante.html">
+                <article class="card">
+                  <img src="images/note-enchantee.jpg" alt="image restaurant la note enchantée" />
+                  <div class="card__content">
+                    <div class="card__txt">
+                      <h4 class="card__title">La note enchanté</h4>
+                      <p class="card__subtitle">Charonne</p>
+                    </div>
+                    <div class="card__rating">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </div>
+            <div class="restaurants__position margin__bot"> <!-- cards en bas -->
+              <a href="a-la-francaise.html">
+                <article class="card">
+                  <img src="images/a-la-francaise.jpg" alt="image restaurant à la Française" />
+                  <div class="card__content">
+                    <div class="card__txt">
+                      <h4 class="card__title">À la française</h4>
+                      <p class="card__subtitle">Cité rouge</p>
+                    </div>
+                    <div class="card__rating">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </article>
+              </a>
+              <a href="le-delice-des-sens.html">
+                <article class="card">
+                  <img src="images/delice-des-sens.jpg" alt="image restaure le délice des sens" />
+                  <div class="card__content">
+                    <div class="card__txt">
+                      <h4 class="card__title">Le délice des sens</h4>
+                      <p class="card__subtitle">Folie-Méricourt</p>
+                    </div>
+                    <div class="card__rating">
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                </article>
+              </a>
+            </div>
+          </div>
+        </div>  
+      </section>
+    </div>
+  </body>
+  <footer>
+      <div class="footer">
+            <div class="a">
+              <i class="fa-solid fa-utensils"></i>
+            <a class="foot__nav" href="#">Proposer un restaurant</a> <!-- Lien footer -->
+            </div>
+            <div class="b">
+              <i class="fa-solid fa-handshake-angle"></i>
+              <a class="foot__nav" href="#">Devenir partenaire</a>
+            </div>
+            <div class="c">
+            <a class="foot__nav" href="#">Mentions légales</a>
+            </div>
+            <div class="d">
+              <a class="foot__nav" href="#">Contact</a>
+            </div>
+      </div>
+      <img src="images/Logo.png" alt="Logo du site" /> <!-- photo du logo -->
+  </footer>
+</html>

@@ -1,0 +1,188 @@
+form {
+    background-color: #EAEAEA;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .form {
+        display: flex;
+        font-size: 16px;
+    font-weight: 500;
+    gap: 17px;
+        }
+    input {
+        border: none;
+        background: #EAEAEA
+    }
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    background-color: #f6f6f6;
+    padding: 30px 0px;
+       h1 {
+        color: #000;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 700;
+        margin-block-start: 0;
+        margin-block-end: 0;
+       }
+       p {
+        font-size: 18px;
+        font-weight: 300;
+       }
+       button {
+        border-radius: 25px;
+        width: 218px;
+        height: 50px;
+        .explore {
+            color: white;
+            font-size: 16px;
+            font-weight: 500;
+        }
+       }
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 50px 180px;
+    .filter {
+        position: relative;
+    }
+    .number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        border: solid 1px #9356DC;
+        background-color: #9356DC;
+        border-radius: 50%;
+        min-width: 24px;
+        min-height: 24px;
+        padding-left: 0px;
+        position: absolute;
+        left: -12px;
+    }
+    i {
+        color: #7E7E7E;
+    }
+    span i {
+        color: #9356DC;
+    }
+    p {
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+    .filters__research {
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 25px;
+        gap: 36.51px;
+        div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 22.14px;
+            border-radius: 25px;
+            box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+            height: 72.379px;
+            flex: 1 1 322.486px;
+        }
+    }
+}
+
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 180px;
+    margin: 30px 0px;
+    h3 {
+        font-size: 24px;
+        font-weight: 700;
+        margin-block-start: 0;
+        margin-block-end: 0;
+        margin-bottom: 28px;
+    }
+    .card {
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+        width: 100%;
+        .card__content {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    i{
+        display: flex;
+        justify-content: flex-end;
+        width: 22px;
+        height: 21px;
+    }
+    .restaurants__position {
+        display: flex;
+        flex-direction: row;
+        gap: 100px;
+        margin-bottom: 50px;
+    }
+    .margin__bot {
+        margin-bottom: 0px;
+    }
+    .card__txt{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        margin-left: 18.74px;
+        padding-top: 16px;
+        padding-bottom: 12px;
+        width: 100%;
+        h4 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        p {
+            font-size: 17px;
+            font-weight: 300;
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+    }
+    .card__rating {
+        display: flex;
+        align-items: center;
+        padding-right: 25px;
+    }
+    .card:hover {
+        opacity: 1;
+        transform: scale(1.1);
+        i {
+            background-color: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+        }
+      }
+    img {
+        border-radius: 15px 15px 0px 0px;
+        height: 231px;
+        width: 100%;
+        object-fit: cover;
+    }
+    a {
+        display: flex;
+        flex: 1 1 490px;
+        text-decoration: none;
+        color: #101010;
+    }
+}

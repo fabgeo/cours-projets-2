@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" >
+    <title></title>
+    <link href="styles.css" rel="stylesheet" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="flex">
+            <a href="index.html">HTML</a>
+            <a href="CSS.html">CSS</a>
+            <a href="">JavaScript</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Ceci Est un cour sur le CSS</h1>
+            <p>introduction : </p>
+            <h2>Base CSS</h2>
+            <ul>
+                <li>Font-size : pour choisir la taille du texte</li>
+                <li>color : la couleur du text</li>
+                <li>text-align : pour positionner le texte</li>
+                <ol>
+                    <li>center : au centre</li>
+                    <li>right,left : commence a droite ou a gauche</li>
+                </ol>
+                <li>font-style : pour choisir le style de la police</li>
+                <li>font-weight : épaisseur entre 100 - 900 pour grosseur des lettres</li>
+                <ol>
+                    <li>bold : gras</li>
+                    <li>normal : normal</li>
+                    <li>thin : plus fin</li>
+                </ol>
+                <li>text-decoration : underline"surligné" line-through "barré" none "normal sans rien"</li>
+            </ul>
+            <h3>élément Multi liste</h3>
+            <h4>Flexbox</h4>
+            <li class="titre">display: flex; pour dire que les blocks soit flexible modulable </li>
+            <li class="titre">flex-direction :</li>
+            <ol>
+                <li>Row: organisé sur une ligne (verticale)</li>
+                <li>column: organisé sur une colonne (horrizontale)</li>
+                <li>row-reverse: organisé sur une ligne en inversé</li>
+                <li>column-reverse: organisé sur une colonne en inversé</li>
+            </ol>
+            <li class="titre">Flex-wrap: pour décider si retour à la ligne ou non</li>
+            <ol>
+                <li>Nowrap: pas de retour à la ligne (ce sert pour tenir sur la ligne)</li>
+                <li>wrap: retour à la ligne quand plus de place (retour à la ligne si pas assez de place)</li>
+                <li>wrap-reverse: retour à la ligne quand plus de place en sens inverse</li>
+            </ol>
+            <!-- à démarquer --> <br>
+            <p>Alignez les éléments sur un axe principal et secondaire</p>
+            <ul>
+                <li>si vos éléments sont organisés horizontalement, l'axe secondaire est l'axe vertical.</li>
+                <li>si vos éléments sont organisés verticalement, l'axe secondaire est l'axe horizontal.</li>
+            </ul>
+            <!-- séparation --> <br>
+            <li class="titre">Justify-content</li>
+            <ol>
+                <li>flex-start: aligné au début (par défaut)</li>
+                <li>flex-end: aligné à la fin</li>
+                <li>center: aligné au centre</li>
+                <li>space-between: éléments étirés sur tout l'axe (avec de l'espace entre eux)</li>
+                <li>space-around: étiré sur tout l'axe mais laisse de l'espace sur les extrémités</li>
+            </ol>
+            <li class="titre">align-items: changement de la valeur secondaire</li>
+            <ol>
+                <li>stretch: les éléments sont étiré sur tout l'axe</li>
+                <li>flex-start: alignés au début</li>
+                <li>flex-end: aligné à la fin</li>
+                <li>center; aligné au centre</li>
+                <li>baseline: aligné sur la ligne de base (flex-start)</li>
+            </ol>
+            <li class="titre">align-content: choisir comment les lignes seront réparti</li>
+            <ol>
+                <li>stretch: (par défaut) éléments s'étirent pour occuper tout l'espace</li>
+                <li>flex-start: alignés au début</li>
+                <li>flex-end: aligné à la fin</li>
+                <li>center: aligné au centre</li>
+                <li>baseline: aligné sur la ligne de base</li>
+            </ol>
+        </section>
+        <section>
+            <ul>
+                <h2>Tableau</h2>
+                <li>Boder-collapse: collapse = pour coller les bordure entre elle</li>
+                <li>Le padding/margin pour la marge entre elle</li>
+                <li>text-align: center= pour centrer les texte</li>
+            </ul>
+            <ul>
+                <h2>media queries</h2>
+                <li>height : la hauteur de la zone d'affichage</li>
+                <li>width: la largeur de la zone d'affichage</li>
+                <li>orientation: orientation du péréphérique (portait ou paysage)</li>
+                <li>media: type d'écran abec la valeur la plus utiliséee: </li>
+                    <ol>
+                        <li>screen: écran classique</li>
+                        <li>all: tout type de média</li>
+                        <li>print: imprimante</li>
+                    </ol>
+                <li>On peut ajouter des préfixe -min -max devant la pluart de ces règles. ainsis que min-width (largeur min) et max-height (hauteur maxi)</li>
+                <li>les règles peuvent être combinées aves l'aide de ces mots</li>
+                <ol>
+                    <li>only: uniquement</li>
+                    <li>and: et</li>
+                    <li>not: non</li>
+                </ol>
+            </ul>
+            <br>
+            <ul>
+                <h2>Overflow:</h2>
+                <li>visible: texte dépasse les limites de taille, reste visible et sort volontairement du block</li>
+                <li>hidden: si texte dépasse les limites, il sera caché on ne pourra pas voir tout le texte</li>
+                <li>scroll: texte cacher si dépasse,sauf que le navigateur mettre des barres de défilement pourq u'on puisse lire l'ensemble</li>
+                <li>auto: mode pilote automatique le navigateur qui décide de mettre ou non des barre de défilement (conseiller)</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+
+</html>
