@@ -13,7 +13,8 @@ nav {
 .menu {
     img {
         width: 100%;
-        max-height: 956.142px;
+        max-height: 383.142px;
+        object-fit: cover;
     }
     .menu__background {
         background-color: #f6f6f6;
@@ -26,19 +27,41 @@ nav {
 .menu {
     display: flex;
     flex-direction: column;
+    position: relative;
     .menu__margin {
         display: flex;
         flex-direction: column;
         gap: 12px;
+    }
+    .menu__background {
+        display: flex;
+        margin: 0px 192px 0px 193px;
+        border-radius: 25px 25px 0px 0px;
+        gap: 40px;
+        a {
+            display: flex;
+            width: 634px;
+            text-decoration: none;
+            color: #101010;
+        }
     }
     .menu__title {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 24px;
+        position: relative;
         i {
-            width: 22px;
-            height: 21px;
+            cursor: pointer;
+            position: absolute;
+            font-size: 1.5em;
+            top: 24px;
+            right: -35px;
+        }
+        .fa-solid:hover {
+            opacity: 0;
+            color: transparent;
+            background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
         }
     }
     h3 {
@@ -57,11 +80,29 @@ nav {
         }
     }
     .card {
+        position: relative;
         background-color: #FFF;
         border-radius: 15px;
         box-shadow: 0px 4.011px 15.043px 0px rgba(0, 0, 0, 0.10);
         width: 100%;
         padding: 15px;
+        max-height: 42px;
+        span {
+            padding-left: 55px;
+        }
+        i {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #99E2D0;
+            border-radius: 0 15px 15px 0;
+            width: 59px;
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #f6f6f6;
+        }
         .card__content {
             display: flex;
             flex-direction: row;
@@ -91,23 +132,12 @@ nav {
         font-size: 15px;
         font-weight: 700;
     }
-    .menu__background {
-        display: flex;
-        margin: 0px 192px 0px 193px;
-        border-radius: 25px 25px 0px 0px;
-        gap: 40px;
-        a {
-            display: flex;
-            width: 634px;
-            text-decoration: none;
-            color: #101010;
-        }
-    }
     button {
         width: 186px;
         height: 50px;
         border-radius: 25px;
         background:(193deg, #9356DC -11.44%, #FF79DA 123.93%);
         margin-bottom: 40px;
+        color: white;
     }
  }

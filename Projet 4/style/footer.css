@@ -18,16 +18,12 @@ footer .footer {
   flex-direction: row;
   gap: 7px;
 }
-footer .a {
-  width: 180px;
-}
 footer .a a {
+  width: 180px;
   margin-left: 11px;
 }
-footer .b {
-  width: 180px;
-}
 footer .b a {
+  width: 180px;
   margin-left: 11px;
 }
 footer .c {

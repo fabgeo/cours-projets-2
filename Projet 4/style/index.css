@@ -16,6 +16,12 @@ form input {
   border: none;
   background: #EAEAEA;
 }
+form input::-moz-placeholder {
+  text-align: center;
+}
+form input::placeholder {
+  text-align: center;
+}
 
 .top {
   display: flex;
@@ -125,12 +131,56 @@ form input {
 .restaurants .card .card__content {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  position: relative;
 }
-.restaurants i {
+.restaurants .card .card__content i {
+  cursor: pointer;
+  position: absolute;
+  font-size: 1.5em;
+  bottom: 45px;
+  right: 30px;
+}
+.restaurants .card .card__content .fa-solid:hover {
+  opacity: 0;
+  color: transparent;
+  background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+}
+.restaurants .card .img {
+  position: relative;
+}
+.restaurants .card .img span {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 80px;
+  height: 29px;
   display: flex;
-  justify-content: flex-end;
-  width: 22px;
-  height: 21px;
+  align-items: center;
+  justify-content: center;
+  background-color: #99e2d0;
+  color: #008766;
+}
+.restaurants .card .card__txt {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-left: 18.74px;
+  padding-top: 16px;
+  padding-bottom: 12px;
+  width: 100%;
+}
+.restaurants .card .card__txt h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.restaurants .card .card__txt p {
+  font-size: 17px;
+  font-weight: 300;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 .restaurants .restaurants__position {
   display: flex;
@@ -140,32 +190,6 @@ form input {
 }
 .restaurants .margin__bot {
   margin-bottom: 0px;
-}
-.restaurants .card__txt {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  margin-left: 18.74px;
-  padding-top: 16px;
-  padding-bottom: 12px;
-  width: 100%;
-}
-.restaurants .card__txt h4 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-.restaurants .card__txt p {
-  font-size: 17px;
-  font-weight: 300;
-  margin-block-start: 0;
-  margin-block-end: 0;
-}
-.restaurants .card__rating {
-  display: flex;
-  align-items: center;
-  padding-right: 25px;
 }
 .restaurants .card:hover {
   opacity: 1;
@@ -180,6 +204,11 @@ form input {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.restaurants img span {
+  background-color: #99e2d0;
+  width: 80px;
+  height: 29px;
 }
 .restaurants a {
   display: flex;
