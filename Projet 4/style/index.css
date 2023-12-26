@@ -134,17 +134,19 @@ form input::placeholder {
   align-items: center;
   position: relative;
 }
-.restaurants .card .card__content i {
+.restaurants .card .card__content .pos {
   cursor: pointer;
   position: absolute;
   font-size: 1.5em;
   bottom: 45px;
   right: 30px;
 }
-.restaurants .card .card__content .fa-solid:hover {
+.restaurants .card .card__content .fa-regular:hover {
   opacity: 0;
-  color: transparent;
-  background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+}
+.restaurants .card .card__content .fa-regular {
+  z-index: 3;
+  background: white;
 }
 .restaurants .card .img {
   position: relative;

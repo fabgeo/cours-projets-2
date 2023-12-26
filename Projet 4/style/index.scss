@@ -128,17 +128,19 @@ form {
             flex-direction: row;
             align-items: center;
             position: relative;
-            i {
+            .pos {
                 cursor: pointer;
                 position: absolute;
                 font-size: 1.5em;
                 bottom: 45px;
                 right: 30px;
             }
-            .fa-solid:hover {
+            .fa-regular:hover {
                 opacity: 0;
-                color: transparent;
-                background-image: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+            }
+            .fa-regular{
+                z-index: 3;
+                background: white;
             }
         }
         .img {
