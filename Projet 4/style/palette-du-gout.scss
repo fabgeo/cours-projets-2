@@ -11,6 +11,29 @@ nav {
 }
 
 .menu {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    .menu__margin {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .menu__background {
+        display: flex;
+        margin: auto;
+        width: 80%;
+        border-radius: 25px 25px 0px 0px;
+        gap: 40px;
+        a {
+            display: flex;
+            width: 634px;
+            text-decoration: none;
+            color: #101010;
+        }
+    }
     img {
         width: 100%;
         max-height: 383.142px;
@@ -21,29 +44,6 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-}
-
-.menu {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    .menu__margin {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
-    .menu__background {
-        display: flex;
-        margin: 0px 192px 0px 193px;
-        border-radius: 25px 25px 0px 0px;
-        gap: 40px;
-        a {
-            display: flex;
-            width: 634px;
-            text-decoration: none;
-            color: #101010;
-        }
     }
     .menu__title {
         display: flex;
@@ -113,6 +113,7 @@ nav {
         flex-direction: column;
         gap: 5px;
         width: 100%;
+        text-overflow: hidden;
         h4 {
             font-size: 18px;
             font-weight: 500;
@@ -139,5 +140,8 @@ nav {
         background:(193deg, #9356DC -11.44%, #FF79DA 123.93%);
         margin-bottom: 40px;
         color: white;
+        &:hover {
+            opacity: 0.8;
+        }
     }
  }

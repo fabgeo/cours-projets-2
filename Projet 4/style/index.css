@@ -147,6 +147,7 @@ form input::placeholder {
 .restaurants .card .card__content .fa-regular {
   z-index: 3;
   background: white;
+  transition: all 1s;
 }
 .restaurants .card .img {
   position: relative;
