@@ -45,5 +45,5 @@ footer .footer_law a {
 footer img {
   width: 139px;
   margin-left: 16px;
-  color: white !important;
+  filter: invert(1);
 }/*# sourceMappingURL=footer.css.map */

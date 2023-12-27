@@ -57,7 +57,9 @@ form {
     flex-direction: column;
     font-size: 24px;
     font-weight: 700;
-    padding: 50px 180px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
     .filter {
         position: relative;
     }
@@ -87,21 +89,22 @@ form {
     }
     .filters__research {
         display: flex;
-        flex-direction: row;
+        // flex-direction: row; desktop
+        flex-direction: column;
         font-size: 16px;
         font-weight: 500;
         margin-top: 25px;
         gap: 36.51px;
         div {
             display: flex;
-            flex-direction: row;
+            flex-direction: row; 
             align-items: center;
             justify-content: center;
             gap: 22.14px;
             border-radius: 25px;
             box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
             height: 72.379px;
-            flex: 1 1 322.486px;
+            // flex: 1 1 322.486px; desktop 
         }
     }
 }
@@ -109,8 +112,8 @@ form {
 .restaurants {
     display: flex;
     flex-direction: column;
-    padding: 0px 180px;
-    margin: 30px 0px;
+    width: 80%;
+    margin: 0 auto;
     h3 {
         font-size: 24px;
         font-weight: 700;
@@ -183,8 +186,10 @@ form {
     }
     .restaurants__position {
         display: flex;
-        flex-direction: row;
-        gap: 100px;
+        flex-direction: column;
+        // row pour desktop
+        gap: 18px;
+        // gap 100 des
         margin-bottom: 50px;
     }
     .margin__bot {
@@ -210,7 +215,7 @@ form {
     }
     a {
         display: flex;
-        flex: 1 1 490px;
+        // flex: 1 1 490px; desktop
         text-decoration: none;
         color: #101010;
     }
